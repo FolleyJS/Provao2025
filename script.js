@@ -61,4 +61,54 @@ for(var classificados of CLASSIFICADOS_PROVAO){
     tableContainer.appendChild(rowTr)
 }
 
+//option course
+
+var SelectCourse = document.querySelector("#select-course")
+var optionsCourse = ''
+
+for(var itemCurso of CLASSIFICADOS_PROVAO){
+    optionsCourse += `<option>${itemCurso.CURSO}</option>`
+}
+
+SelectCourse.innerHTML = optionsCourse;
+
+console.log(optionsCourse)
+
+
+//option campus
+
+var SelectCampus = document.querySelector("#select-campus");
+var optionCampus = '';
+
+for(var itemCampus of CLASSIFICADOS_PROVAO){
+    optionCampus += `<option>${itemCampus.CAMPUS}</option>`
+}
+
+SelectCampus.innerHTML = optionCampus;
+
+//option Grupo
+
+var SelectGrupo = document.querySelector("#select-grupo");
+var optionGrupo = '';
+
+for (var itemGrupo of CLASSIFICADOS_PROVAO){
+    optionGrupo += `<option>${itemGrupo.GRUPO}</option>`
+}
+
+SelectGrupo.innerHTML = optionGrupo;
+
+// option Cota
+
+var SelectCota = document.querySelector("#select-cota");
+var optionCota = '';
+
+for (var itemCota of CLASSIFICADOS_PROVAO){
+    optionCota += `<option>${itemCota.COTA}</option>`
+}
+
+SelectCota.innerHTML = optionCota;
+
+
+// condições
+
 
